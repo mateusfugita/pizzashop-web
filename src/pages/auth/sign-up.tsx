@@ -74,8 +74,8 @@ export function SignUp() {
             <div className="space-y-2">
               <Label htmlFor="restaurantName">Nome do estabelecimento</Label>
               <Input
-                id="text"
-                type="restaurantName"
+                id="restaurantName"
+                type="text"
                 {...register('restaurantName')}
               />
             </div>
@@ -83,8 +83,8 @@ export function SignUp() {
             <div className="space-y-2">
               <Label htmlFor="managerName">Seu nome</Label>
               <Input
-                id="text"
-                type="managerName"
+                id="managerName"
+                type="text"
                 {...register('managerName')}
               />
             </div>
@@ -96,7 +96,7 @@ export function SignUp() {
 
             <div className="space-y-2">
               <Label htmlFor="phone">Seu celular</Label>
-              <Input id="text" type="tel" {...register('phone')} />
+              <Input id="phone" type="tel" {...register('phone')} />
             </div>
 
             <Button disabled={isSubmitting} className="w-full" type="submit">
